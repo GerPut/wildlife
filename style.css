@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+:root {
+  --font-1: 'Cardo', serif;
+  --font-2: 'Lato', sans-serif;
+  --heading-L: 10rem;
+  --heading-M: 6rem;
+  --pcolor: #E0DDCF;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +21,7 @@ html {
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: var(--font-2);
 }
 
 .navbar {
@@ -39,7 +47,7 @@ body {
 
 .nav-link {
   font-size: 1.5rem;
-  color: #E0DDCF;
+  color: var(--pcolor);
   width: 15rem;
   margin: 0 3rem;
   text-transform: uppercase;
@@ -63,7 +71,7 @@ body {
   transform: translateY(-50%);
   background-color: transparent;
   border: none;
-  color: #E0DDCF;
+  color: var(--pcolor);
   font-size: 4rem;
 }
 
@@ -109,7 +117,7 @@ body {
 .progress h2 {
   font-size: 2.5rem;
   font-weight: 300;
-  color: #E0DDCF;
+  color: var(--pcolor);
 }
 
 .circle-wrapper {
@@ -119,14 +127,14 @@ body {
 .circle {
   width: 1rem;
   height: 1rem;
-  border: 0.1rem solid #E0DDCF;
+  border: 0.1rem solid var(--pcolor);
   border-radius: 50%;
   margin: 0 0.3rem;
   transition: background-color 0.3s;
 }
 
 .circle-1 {
-  background-color: #E0DDCF;
+  background-color: var(--pcolor);
 }
 
 .wrapper {
@@ -169,10 +177,10 @@ section {
 }
 
 .section-1-heading {
-  font-family: 'Cardo', serif;
-  font-size: 10rem;
+  font-family: var(--font-1);
+  font-size: var(--heading-L);
   font-weight: 300;
-  color: #E0DDCF;
+  color: var(--pcolor);
   text-transform: capitalize;
   letter-spacing: 0.1rem;
   border-bottom: 0.2rem solid #c6ad86;
@@ -201,15 +209,15 @@ section {
 }
 
 .project-heading {
-  font-family: 'Cardo', serif;
-  font-size: 6rem;
-  color: #E0DDCF;
+  font-family: var(--font-1);
+  font-size: var(--heading-M);
+  color: var(--pcolor);
   margin-bottom: 1rem;
 }
 
 .project-paragraph {
   font-size: 2rem;
-  color: #E0DDCF;
+  color: var(--pcolor);
   font-weight: 300;
 }
 
@@ -221,9 +229,9 @@ section {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   background-color: transparent;
-  color: #E0DDCF;
+  color: var(--pcolor);
   margin-top: 4rem;
-  border: 0.1rem solid #E0DDCF;
+  border: 0.1rem solid var(--pcolor);
   transition: background-color 0.2s;
 }
 
@@ -251,13 +259,16 @@ section {
 }
 
 .section-3-heading {
-  font-size: 20rem;
-  color: #E0DDCF;
-  text-transform: uppercase;
-  transform: rotate(-20deg);
+  font-size: var(--heading-M);
+  color: var(--pcolor);
   text-align: center;
-  text-shadow: 0 0.5rem 1.5rem #000;
-  user-select: none;
+}
+
+.section-3-paragraph {
+  font-size: 2rem;
+  color: var(--pcolor);
+  font-weight: 300;
+  width: 55rem;
 }
 
 .frame-img {
@@ -300,18 +311,18 @@ section {
 }
 
 .section-4-heading {
-  font-family: 'Cardo', serif;
+  font-family: var(--font-1);
   font-size: 4rem;
   font-weight: 300;
   text-align: center;
   margin-bottom: 1rem;
-  color: #E0DDCF;
+  color: var(--pcolor);
   user-select: none;
 }
 
 .new-wines-img {
   width: 70rem;
-  border: 0.1rem solid #E0DDCF;
+  border: 0.1rem solid var(--pcolor);
   padding: 1rem;
   opacity: 0.7;
 }
@@ -336,7 +347,7 @@ section {
 .modal {
   font-weight: 200;
   letter-spacing: 1px;
-  background-color: #fff;
+  background-color: var(--pcolor);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   position: absolute;
   overflow: hidden;
@@ -350,7 +361,7 @@ section {
 }
 
 .modal-header {
-  background: #fff;
+  background: var(--pcolor);
   color: #000;
   padding: 15px;
 }
@@ -389,7 +400,7 @@ section {
 }
 
 input:focus {
-  outline: #fff;
+  outline: var(--pcolor);
 }
 
 div.register:first-child {
@@ -465,13 +476,13 @@ div.register:first-child {
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
-  color: #E0DDCF;
+  color: var(--pcolor);
   margin: 1rem 0;
 }
 
 .footer-list li:first-child {
   text-transform: uppercase;
-  color: #E0DDCF;
+  color: var(--pcolor);
 }
 
 .footer-img {
@@ -486,17 +497,11 @@ div.register:first-child {
   font-size: 2rem;
   font-weight: 600;
   text-align: center;
-  color: #E0DDCF;
+  color: var(--pcolor);
   letter-spacing: 0.2rem;
 }
 
 @media (max-width: 1600px) {
-  .sale-bag {
-    width: 35rem;
-  }
-  .wine-bottle {
-    width: 65rem;
-  }
   .footer-img {
     width: 45rem;
     margin: 0 12rem;
@@ -504,12 +509,6 @@ div.register:first-child {
 }
 
 @media (max-width: 1300px) {
-  .sale-bag {
-    width: 30rem;
-  }
-  .wine-bottle {
-    width: 60rem;
-  }
   .footer-img {
     width: 35rem;
     margin: 0 10rem;
@@ -526,16 +525,10 @@ div.register:first-child {
   .section-1-heading {
     font-size: 8rem;
   }
-  .sale-bag {
-    width: 25rem;
-  }
   .sale-btn {
     width: 15rem;
     height: 4rem;
     font-size: 1.7rem;
-  }
-  .wine-bottle {
-    width: 50rem;
   }
   .footer-img {
     width: 25rem;
@@ -562,7 +555,7 @@ div.register:first-child {
   .menu-line {
     width: 100%;
     height: 0.3rem;
-    background-color: #E0DDCF;
+    background-color: var(--pcolor);
     transition: transform 0.5s;
   }
   .change .menu-line-1 {
@@ -636,12 +629,6 @@ div.register:first-child {
   .section-1-heading {
     font-size: 6rem;
   }
-  .sale-bag {
-    width: 20rem;
-  }
-  .wine-bottle {
-    width: 40rem;
-  }
   .section-3-heading {
     font-size: 11rem;
     opacity: 0.7;
@@ -703,11 +690,5 @@ div.register:first-child {
   }
   .section-3-heading {
     font-size: 8rem;
-  }
-  .grapes-img {
-    width: 15rem;
-  }
-  .grapes-img:hover {
-    width: 25rem;
   }
 }
