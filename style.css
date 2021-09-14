@@ -245,6 +245,8 @@ section {
   width: 50rem;
 }
 
+/* SECTION 3 */
+
 .section-3 {
   z-index: 30;
   background-color: #000;
@@ -258,36 +260,57 @@ section {
   justify-content: center;
 }
 
+.section-3-text-content {
+  background-color: rgba(255, 255, 255, 0.733);
+}
+
 .section-3-heading {
   font-size: var(--heading-M);
-  color: var(--pcolor);
+  font-family: var(--font-1);
+  color: #000;
   text-align: center;
+}
+
+.section-3-quote {
+  display: flex;
+  justify-content: center;
+}
+
+.quote-heading {
+  font-size: 3rem;
+  margin: 5rem;
+}
+
+.section-3-person {
+  height: 150px;
+  width: 150px;
+  border: 2px solid #000;
+  border-radius: 50%;
 }
 
 .section-3-paragraph {
   font-size: 2rem;
-  color: var(--pcolor);
+  color: #000;
   font-weight: 300;
   width: 55rem;
 }
 
-.frame-img {
-  width: 100rem;
-  position: absolute;
-  opacity: 0.5;
+.sponsors {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.grapes-img {
-  width: 40rem;
-  position: absolute;
-  opacity: 0.7;
-  transition: all 1.5s;
+.sponsors-pics {
+  display: flex;
+  ;
 }
 
-.grapes-img:hover {
-  opacity: 1;
-  transform: scale(2);
+.sponsor-1 {
+  transform: scale(0.4)
 }
+
+/* SECTION 4 */
 
 .section-4 {
   z-index: 20;
