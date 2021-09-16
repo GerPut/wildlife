@@ -262,6 +262,8 @@ section {
 
 .section-3-text-content {
   background-color: rgba(255, 255, 255, 0.733);
+  border-radius: 1.5rem;
+  padding: 2rem;
 }
 
 .section-3-heading {
@@ -289,7 +291,10 @@ section {
 }
 
 .section-3-paragraph {
+  display: block;
+  margin: 0 auto;
   font-size: 2rem;
+  padding: 2rem;
   color: #000;
   font-weight: 300;
   width: 55rem;
@@ -301,13 +306,34 @@ section {
   justify-content: center;
 }
 
+.sponsor-heading {
+  display: block;
+  text-align: center;
+}
+
 .sponsors-pics {
   display: flex;
-  ;
 }
 
 .sponsor-1 {
-  transform: scale(0.4)
+  margin-top: 3rem;
+  height: 50px;
+  width: 150px;
+}
+
+.sponsor-2 {
+  height: 120px;
+  width: 150px;
+}
+
+.sponsor-3 {
+  height: 150px;
+  width: 250px;
+}
+
+.sponsor-4 {
+  height: 200px;
+  width: 200px;
 }
 
 /* SECTION 4 */
@@ -343,18 +369,10 @@ section {
   user-select: none;
 }
 
-.new-wines-img {
-  width: 70rem;
-  border: 0.1rem solid var(--pcolor);
-  padding: 1rem;
-  opacity: 0.7;
-}
-
 /* MODAL */
 
 .modal-container {
-  background-color: rgba(0, 0, 0, 0.5);
-  /* display: none; */
+  /* background-color: rgba(0, 0, 0, 0.5); */
   position: fixed;
   top: 0;
   left: 0;
@@ -363,24 +381,19 @@ section {
   z-index: 200;
 }
 
-.modal-container.show-modal {
-  display: block;
-}
-
 .modal {
-  font-weight: 200;
+  font-weight: 300;
   letter-spacing: 1px;
-  background-color: var(--pcolor);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.733);
+  padding: 3rem;
+  border-radius: 1.5rem;
   position: absolute;
   overflow: hidden;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 100%;
-  width: 400px;
-  animation-name: modalopen;
-  animation-duration: var(--modal-duration);
+  width: 500px;
 }
 
 .modal-header {
@@ -389,14 +402,20 @@ section {
   padding: 15px;
 }
 
-.modal-header h3 {
+.modal-content-header {
   margin: 0;
-}
-
-.model-content-header {
-  font-size: 1.2rem;
+  padding: 15px;
+  font-family: var(--font-1);
+  font-size: 6rem;
   display: block;
   text-align: center;
+}
+
+.modal-content-header-2 {
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 300;
 }
 
 .modal-content {
@@ -414,6 +433,7 @@ section {
 .modal-form label {
   display: block;
   margin-bottom: 5px;
+  font-size: 1.5rem;
 }
 
 .modal-form .form-input {
@@ -444,7 +464,7 @@ div.register:first-child {
 
 .register small {
   color: red;
-  font-size: 1rem;
+  font-size: 1.5rem;
   bottom: 0;
   left: 0;
   visibility: hidden;
@@ -463,9 +483,24 @@ div.register:first-child {
 }
 
 .submit-btn {
-  font-size: 1rem;
-  font-weight: bold;
-  color: green!important;
+  font-family: var(--font-2);
+  display: block;
+  width: 100%;
+  height: 5rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: #000;
+  margin-top: 4rem;
+  border: 1.2px solid #000;
+}
+
+.submit-btn:hover {
+  background-color: #000;
+  color: var(--pcolor);
+  transition: background-color 0.2s;
+  cursor: pointer;
 }
 
 @keyframes modalopen {
