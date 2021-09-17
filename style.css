@@ -522,6 +522,15 @@ div.register:first-child {
   z-index: 10;
 }
 
+.section-5-heading {
+  font-family: var(--font-1);
+  position: absolute;
+  top: 15%;
+  padding: 15px;
+  font-size: 6rem;
+  color: #fff;
+}
+
 .section-5-wrapper {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(images/p4.jpg) center no-repeat;
   background-size: cover;
@@ -530,17 +539,21 @@ div.register:first-child {
   justify-content: center;
 }
 
+.footer-list {
+  margin: 3rem;
+  background-color: rgba(255, 255, 255, 0.733);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  display: block;
+  text-align: center;
+}
+
 .footer-list li {
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
-  color: var(--pcolor);
+  color: #000;
   margin: 1rem 0;
-}
-
-.footer-list li:first-child {
-  text-transform: uppercase;
-  color: var(--pcolor);
 }
 
 .footer-img {
