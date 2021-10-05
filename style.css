@@ -539,6 +539,13 @@ div.register:first-child {
   justify-content: center;
 }
 
+.frame {
+  background-color: rgba(255, 255, 255, 0.733);
+  padding: 3rem;
+  border-radius: 1.5rem;
+  margin-top: 10px;
+}
+
 .footer-list {
   margin: 3rem;
   background-color: rgba(255, 255, 255, 0.733);
@@ -595,11 +602,6 @@ div.register:first-child {
   }
   .section-1-heading {
     font-size: 8rem;
-  }
-  .sale-btn {
-    width: 15rem;
-    height: 4rem;
-    font-size: 1.7rem;
   }
   .footer-img {
     width: 25rem;
@@ -659,23 +661,11 @@ div.register:first-child {
   .section-2-wrapper {
     flex-direction: column;
   }
-  .sale {
-    order: 1;
-  }
   .section-3-heading {
     font-size: 12rem;
   }
-  .frame-img {
-    width: 70rem;
-  }
-  .grapes-img {
-    width: 25rem;
-  }
   .section-4-heading {
     font-size: 8rem;
-  }
-  .new-wines-img {
-    width: 60rem;
   }
   .section-5-wrapper {
     flex-direction: column;
@@ -704,12 +694,6 @@ div.register:first-child {
     font-size: 11rem;
     opacity: 0.7;
   }
-  .frame-img {
-    width: 60rem;
-  }
-  .new-wines-img {
-    width: 45rem;
-  }
   .progress-wrapper {
     top: 0;
     left: 50%;
@@ -719,30 +703,18 @@ div.register:first-child {
 
 @media (max-width: 600px) {
   .section-1-heading {
-    font-size: 4rem;
+    font-size: 8rem;
+    text-align: center;
   }
-  .sale-bag {
-    width: 15rem;
-  }
-  .wine-bottle {
-    width: 30rem;
-  }
-  .sale-btn {
-    width: 12rem;
-    height: 3rem;
-    font-size: 1.4rem;
+  .project-paragraph {
+    padding-left: 2rem;
+    margin: auto;
   }
   .section-3-heading {
     font-size: 10rem;
   }
-  .frame-img {
-    width: 35rem;
-  }
   .section-4-heading {
     font-size: 6rem;
-  }
-  .new-wines-img {
-    width: 35rem;
   }
 }
 
