@@ -526,8 +526,8 @@ div.register:first-child {
   font-family: var(--font-1);
   position: absolute;
   top: 15%;
-  padding: 15px;
-  font-size: 6rem;
+  /* padding: 15px; */
+  font-size: 4rem;
   color: #fff;
 }
 
